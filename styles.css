@@ -32,3 +32,27 @@ html{
     font-size: 62.5%; /*reseteamos el valor de la fuente para poder usar rem adecuadamente*/
     font-family: 'DM sans', sans-serif; /*como en la mayoría de las letras se usa esta fuente mejor se marca como global */
 }
+/*parte del header*/
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    height: 334px; /*porque la cajita parece cuadrada :V */
+    text-align: center;
+}
+header img{
+    width: 125px;
+    height: 24px;
+    margin-top: 40px;
+    align-self: center;/*no es necesario que mande a llamar esta clase pues ya en el padre lo ando acomodando todo, asi no lo hizo el profe :V*/
+}
+.header__title-container{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    text-align: center;/*no se esta centrando ya?*/
+}
