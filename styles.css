@@ -77,7 +77,7 @@ header img{
 }
 .header__title-container .header__button{
     position: absolute; /*es es para poder posicionar el boton entre los dos contenedores hay maneras de hacerlo ,esta es una*/
-    top: calc(100% -24px); /*aqui hay que hacer los calculos para que de verdad quede en el centro */
+    top: calc(100% - 24px); /*aqui hay que hacer los calculos para que de verdad quede en el centro */
     left: calc(50% - 114.5px); /* en si se esta centrando pero como la caja tiene una dimension grande no se nota por eso restamos, al parecer restamos la mitad del width del contenedor para que quede totalmente centrado*/
     display: block; /*porque como es una ancla por default utiliza display inline*/
     /*margin-top: 35px; ya no se necesita :V*/
@@ -101,4 +101,46 @@ header img{
     margin-left: 10px;
     background-image: url('./assets/icons/down-arrow.svg');
 
+}
+/*Parte del main*/
+main{
+    width: 100%;
+    height: auto;
+    background-color: var(--off-white);
+}
+.main__exchanger-container{
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.main__exchanger-container--title{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto; /*supongo como solo es un contenedor da igual el display que tenga y por eso pues uso el margin auto también supongo puedo hacer lo mismo solo poniendo una comoa para que ahorre código*/
+}
+.main__exchanger-container .main__background-img{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-image: url('./assets/img/Bitcoin.svg');
+    background-size: cover;
+    background-position: center; /*esto es por si pues la pantalla es mas grande */
+    background-repeat: no-repeat;
+}
+.main__exchanger-container h2{
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+.main__exchanger-container p{
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: #757575;
 }
