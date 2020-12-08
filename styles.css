@@ -68,9 +68,37 @@ header img{
     color: var(--just-white);
 }
 .header__title-container p{
-    margin-top: 25px; /*que facil es usar rem cuando lo tienes bien definido jaja */ 
+    margin-top: 25px; /*que facil es usar rem cuando lo tienes bien definido jaja */
+    margin-bottom: 35px;
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
     color: var(--soft-orange);
+}
+.header__title-container .header__button{
+    position: absolute; /*es es para poder posicionar el boton entre los dos contenedores hay maneras de hacerlo ,esta es una*/
+    top: calc(100% -24px); /*aqui hay que hacer los calculos para que de verdad quede en el centro */
+    left: calc(50% - 114.5px); /* en si se esta centrando pero como la caja tiene una dimension grande no se nota por eso restamos, al parecer restamos la mitad del width del contenedor para que quede totalmente centrado*/
+    display: block; /*porque como es una ancla por default utiliza display inline*/
+    /*margin-top: 35px; ya no se necesita :V*/
+    padding: 15px;
+    width: 229px; /*229px entre 2 es igual a 114.5px lo que se usa en el left*/
+    height: 48px;
+    background-color: var(--off-white);
+    /*parte de las sombras proque pues tiene el boton XD*/
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, .16);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+}
+.header__button span{
+    display: inline-block; /*la misma cantaleta de la ancla*/
+    width: 13px; /*porque si no se ve el el background :v*/
+    height: 8px;
+    margin-left: 10px;
+    background-image: url('./assets/icons/down-arrow.svg');
+
 }
