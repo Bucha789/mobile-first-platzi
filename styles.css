@@ -261,3 +261,87 @@ main {
   font-weight: normal;
 }
 /*parte de los beneficionos de la página*/
+.main__product-detail{
+  position: relative; /*le ponemos esta posicion para que los hijos que tenga la posicion absoluta no se salgan mas alla de lo que deberían*/
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding: 20px 10px;
+  background-color: var(--warm-black)
+}
+.batata-logo{
+  position: absolute;
+  width: 40px;
+  height: 25px;
+  background-image: url('./assets/icons/batata.svg');
+  top: -12.5px;
+  left: calc(50% - 20px);
+}
+.main__product-detail--title{
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+}
+.main__product-detail--title h2{
+  margin-bottom: 20px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--just-white)
+}
+.main__product-detail--title p{
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  font-weight: 500px;
+  line-height: 1.8rem;
+  color: #808080;
+}
+.product__cards--icon{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.clock{
+  background-image: url('./assets/icons/clock.svg');
+}
+.eye{
+  background-image: url('./assets/icons/eye.svg');
+}
+.cash{
+  background-image: url('./assets/icons/dollar-sign.svg');
+}
+.palomita{
+  background-image: url('./assets/icons/check-circle.svg');
+}
+.product___cards--detail{
+  width: 90%;
+  min-width: 288px;
+  max-width: 400px;
+  height: 150px;
+  margin: 15px auto;
+  padding: 15px;
+  background-color: var(--black);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .16);
+  color: #808080;
+}
+.product--card-title{
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  color: var(--just-white);
+}
+.product--card-body{
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #808080;
+}
