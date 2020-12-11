@@ -31,6 +31,7 @@
 html {
   font-size: 62.5%; /*reseteamos el valor de la fuente para poder usar rem adecuadamente*/
   font-family: "DM sans", sans-serif; /*como en la mayoría de las letras se usa esta fuente mejor se marca como global */
+  scroll-behavior: smooth; /*esto es para que el cambio de secciones no se vea tan brusco*/
 }
 /*h1{
     font-weight: bold;
