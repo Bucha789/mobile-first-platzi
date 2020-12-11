@@ -393,3 +393,83 @@ main {
   line-height: 1.8rem;
   color: var(--warm-grey);
 }
+.plans--container-card{
+  position: relative;
+  width: 70%;
+  min-width: 230px;
+  max-width: 300px;
+  height: 250px;
+  margin: 50px auto 0;
+  padding: 0 15px;
+  background-color: var(--just-white);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+.plans--container-card .recommended{
+  position: absolute;
+  top: -15px;
+  left: calc(50% - 50px);
+  width: 100px;
+  height: 30px;
+  padding: 8px;
+  font-family: 'inter', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.4rem;
+  border-radius: 5px;
+  background-color: var(--bitcoin-orange);
+  color: var(--just-white)
+}
+.plan--info-container{
+  padding-top: 30px;
+  font-family: 'inter', sans-serif;
+  text-align: center;
+  color: var(--black);
+}
+.plan--info-container .plan--card-title{
+  margin-bottom: 8px;
+  font-family: "DM sans", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+.plan--info-container .plan--card-price{
+  margin-bottom: 10px;
+  font-size: 5rem;
+  font-weight: bold;
+  line-height: 5.2rem;
+}
+.plan--info-container .plan--card-price span{
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.4rem;
+}
+.plan--info-container .plan--card-saving{
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.4rem;
+  color: var(--warm-grey);
+}
+.plan--info-container .plan--card-ca{
+  width: 180px;
+  height: 50px;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  font-family: 'DM sans', sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.6rem;
+  border-radius: 5px;
+  border: 2px solid var(--bitcoin-orange);
+  color: var(--black);
+}
+.plan--info-container .plan--card-ca span{
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  display: inline-block;
+  background-image: url('./assets/icons/orange-right-arrow.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
