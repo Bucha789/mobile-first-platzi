@@ -405,13 +405,15 @@ main {
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
 }
+.plans--container-card:nth-of-type(3){
+  background-color: var(--black);
+}
+/*Parte las recomendaciones*/
 .plans--container-card .recommended{
   position: absolute;
   width: 120px;
   height: 30px;
   padding: 6px;
-  background-color: var(--bitcoin-orange);
-  color: var(--just-white);
   border-radius: 8px;
   top: -15px;
   left: calc(50% - 60px);
@@ -419,6 +421,16 @@ main {
   font-family: 'inter', sans-serif;
   font-weight: bold;
   line-height: 1.4rem;
+  color: var(--just-white);
+}
+.plans--container-card .anual--option{
+  background-color: var(--bitcoin-orange);
+  }
+.plans--container-card .mensual--option{
+  background-color: var(--secondary-blue);
+}
+.plans--container-card .life--option{
+  background-color: var(--warm-grey);
 }
  /*.plan--info-container{
   padding-top: 30px;
@@ -426,6 +438,7 @@ main {
   text-align: center;
   color: var(--black);
 } */
+/*parte de la info*/
 .plan--info-container .plan--card-title{
   padding-top: 30px;
   font-size: 1.4rem;
@@ -453,6 +466,10 @@ main {
   line-height: 1.4rem;
   color: var(--warm-grey);
 }
+/*parte de la parte de por vida*/
+.plan--info-container .de-por-vida--white{
+  color: var(--just-white);
+}
 /*parte del llamado a la accion*/
 .plan--info-container .plan--card-ca{
   width: 150px;
@@ -477,4 +494,15 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   vertical-align: text-bottom; /*asi se alinean las cosas sin tanto display flex cada cosa nueva que aprende uno:v*/
+}
+.plan--info-container .mensual--option-btn .blue-arrow{
+  background-image: url('./assets/icons/blue-right-arrow.svg');
+}
+/*Parte del boton de por vida*/
+.plan--info-container .mensual--option-btn{
+  border: 2px solid var(--secondary-blue);
+}
+.plan--info-container .de-por-vida{
+  background-color: var(--black);
+  color: var(--just-white);
 }
