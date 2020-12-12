@@ -1,0 +1,23 @@
+.main__tables-container{
+    display: flex;
+    width: 900px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.plans--container-slider{
+    justify-content: center;
+}
+.product__cards-container{
+    display: flex;
+    width: 900px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+footer .left ul{
+    display: flex;
+}
+.left ul li{
+    margin-left: 20px;
+}
